@@ -17,7 +17,6 @@ import org.scalatest.FlatSpec
  * @author Elliot Wright <elliot@elliotwright.co>
  */
 class BerlinClockSpec extends FlatSpec {
-
   "Yellow lamp" should "blink on/off every two seconds" in {
     assert(BerlinClock.seconds(0) === "Y")
     assert(BerlinClock.seconds(1) === "O")

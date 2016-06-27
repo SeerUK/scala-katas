@@ -33,9 +33,11 @@ object BerlinClock extends App {
     if (s % 2 == 0) "Y" else "O"
 
   def topHours(h: Int): String = onOff(topRowOn(h), "R", 4)
+
   def topMinutes(m: Int): String = onOff(topRowOn(m), "Y", 11).replace("YYY", "YYR")
 
   def bottomHours(m: Int): String = onOff(bottomRowOn(m), "R", 4)
+
   def bottomMinutes(m: Int): String = onOff(bottomRowOn(m), "Y", 4)
 
   private def onOff(on: Int, onChar: String, total: Int): String =
